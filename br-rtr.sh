@@ -39,7 +39,6 @@ echo "net_admin ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 # Настройка FRR (OSPF)
 sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons
 systemctl restart frr
-
 # Конфигурация frr
 vtysh
 configure terminal
@@ -54,7 +53,6 @@ no ip ospf passive
 exit
 do wr mem
 exit
-
 # Пароля для frr
 configure terminal
 interface gre
@@ -63,5 +61,6 @@ ip ospf aythentification-key PLAINPAS
 exit
 do wr mem
 exit
+
 
 
