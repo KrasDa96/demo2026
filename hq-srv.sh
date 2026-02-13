@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Настройка HQ-SRV..."
 
 apt-get update && apt-get install -y dnsmasq 
 hostnamectl set-hostname hq-srv.au-team.irpo 
