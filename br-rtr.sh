@@ -44,7 +44,7 @@ systemctl restart frr
 echo "firr.conf
 firr version 10.2.2
 firr defaults traditional
-hostname hq-rrt.au-team.irpo
+hostname br-rtr.au-team.irpo
 log file /var/log/frr/frr.log
 no ipv6 forwarding
 !
@@ -60,6 +60,7 @@ network 10.10.1.0/28 area 0
 network 172.16.100.0/29 area 0
 exit
 !"  >etc/frr/frr.conf
+
 
 
 
