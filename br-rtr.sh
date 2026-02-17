@@ -4,7 +4,7 @@ echo "Настройка BR-RTR..."
 apt-get update && apt-get install -y tzdata mc iptables sudo  frr
 
 timedatectl set-timezone Asia/Novosibirsk
-hostnamectl set-hostname br-rtr.au-team.irpo && exec bash
+hostnamectl set-hostname br-rtr.au-team.irpo 
 
 #в сторону br-srv
 mkdir -p /etc/net/ifaces/ens20
@@ -60,5 +60,6 @@ network 10.10.1.0/28 area 0
 network 172.16.100.0/29 area 0
 exit
 !"  >etc/frr/frr.conf
+
 
 
